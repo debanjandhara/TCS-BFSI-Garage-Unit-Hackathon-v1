@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-openai
+langchain-community
+faiss-cpu # or faiss-gpu if you have CUDA setup
+openai
+python-dotenv
+tiktoken
+pypdf # If you plan to use PDF documents
+unstructured # For broader document type support

@@ -1,0 +1,56 @@
+# TCS-BFSI-Garage-Unit-Hackathon-v1
+
+## Implemented Project Structure
+
+```
+/TCS-BFSI-Garage-Unit-Hackathon-v1/
+│
+├── app.py                     # Main entry point for the Streamlit app
+├── app/                       # Main application folder
+│   ├── __init__.py            # Python package marker
+│   ├── main.py                # Main application logic (called by app.py)
+│   │
+│   ├── core/                  # Core functionality
+│   │   ├── __init__.py
+│   │   ├── rag_engine.py      # Core RAG implementation
+│   │   ├── llm.py             # LLM and embedding models
+│   │   ├── document_store.py  # Document loading and processing
+│   │   └── vector_store.py    # Vector store functionality
+│   │
+│   ├── ui/                    # User interface components
+│   │   ├── __init__.py
+│   │   ├── sidebar.py         # Sidebar UI components
+│   │   ├── chat.py            # Chat interface components
+│   │   └── document_management.py # Document management UI
+│   │
+│   ├── utils/                 # Utility functions
+│   │   ├── __init__.py
+│   │   ├── config.py          # Configuration handling
+│   │   ├── logging_utils.py   # Logging utilities
+│   │   └── session.py         # Session state management
+│   │
+│   └── config/                # Configuration files
+│       ├── __init__.py
+│       └── prompts.py         # Prompt templates
+│
+├── data/                      # Where documents are stored
+│   └── (document files)
+│
+├── vectorstore/               # Vector database storage
+│   └── db_faiss/
+│
+├── logs/                      # Log files
+│
+├── tests/                     # Tests for the application
+│   ├── __init__.py
+│   ├── test_rag_engine.py
+│   ├── test_document_store.py
+│   └── test_vector_store.py
+│
+├── run.py                     # Launcher script
+├── __init__.py                # Root package marker
+├── .env-example               # Example environment variables
+├── .gitignore                 # Git ignore file
+├── README.md                  # Project README
+└── requirements.txt           # Project dependencies
+``` 
